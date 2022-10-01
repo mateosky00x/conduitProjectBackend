@@ -1,0 +1,25 @@
+15:41:17.209 request:
+1 > POST https://angular-conduit-node.herokuapp.com/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 97
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: angular-conduit-node.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_202)
+{"user":{"username":"mateotester123","email":"mateotester123@gmail.com","password":"mateo12345"}}
+
+15:41:17.746 response time in milliseconds: 536,65
+1 < 422
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 71
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Sep 2022 20:41:14 GMT
+1 < Etag: W/"47-6saWFJB14+czND2xZMxVyQ"
+1 < Server: Cowboy
+1 < Vary: X-HTTP-Method-Override
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":{"username":"is already taken.","email":"is already taken."}}
+
+15:41:17.747 status code was: 422, expected: 200, response time: 537, url: https://angular-conduit-node.herokuapp.com/api/users, response: {"errors":{"email":"is already taken.","username":"is already taken."}}

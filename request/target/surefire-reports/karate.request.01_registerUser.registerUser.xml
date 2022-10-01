@@ -1,0 +1,17 @@
+<testsuite failures="1" name="karate/request/01_registerUser/registerUser.feature" skipped="0" tests="1" time="1.383669">
+  <testcase classname="karate.request.01_registerUser.registerUser" name="check the service POST Method" time="1.383669">
+    <failure message="registerUser.feature:16 - status code was: 422, expected: 200, response time: 537, url: https://angular-conduit-node.herokuapp.com/api/users, response: {&quot;errors&quot;:{&quot;email&quot;:&quot;is already taken.&quot;,&quot;username&quot;:&quot;is already taken.&quot;}}">* url url ................................................................. passed
+* def requestPost = read('classpath:karate/request/01_registerUser/requestRegisterUserData.json') . passed
+* def responsePost = read('classpath:karate/request/01_registerUser/responseRegisterUserData.json') . passed
+Given path 'users' ........................................................ passed
+And request requestPost ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: registerUser.feature:16 - status code was: 422, expected: 200, response time: 537, url: https://angular-conduit-node.herokuapp.com/api/users, response: {"errors":{"email":"is already taken.","username":"is already taken."}}&#13;
+	at ✽.Then status 200 (registerUser.feature:16)&#13;
+
+And match response == responsePost ........................................ skipped</failure>
+  </testcase>
+</testsuite>

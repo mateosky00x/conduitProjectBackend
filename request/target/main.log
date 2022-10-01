@@ -1,0 +1,32 @@
+12:15:41.959 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzIxZDk3ZGM3M2I1MDAxN2NiNmViZCIsInVzZXJuYW1lIjoidGVzdGVyMjAyMDIwIiwiZXhwIjoxNjY5NDEyNzU5LCJpYXQiOjE2NjQyMjg3NTl9.BQXs0gz3V3GmMmVaSEddohrrVjecrN3mY95afvKaQzk
+12:15:41.959 [print] otrotester123
+12:15:42.924 request:
+1 > POST https://angular-conduit-node.herokuapp.com/api/profiles/otrotester123/follow
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzIxZDk3ZGM3M2I1MDAxN2NiNmViZCIsInVzZXJuYW1lIjoidGVzdGVyMjAyMDIwIiwiZXhwIjoxNjY5NDEyNzU5LCJpYXQiOjE2NjQyMjg3NTl9.BQXs0gz3V3GmMmVaSEddohrrVjecrN3mY95afvKaQzk
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: angular-conduit-node.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_202)
+{}
+
+12:15:43.433 response time in milliseconds: 507,54
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 143
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 27 Sep 2022 17:15:42 GMT
+1 < Etag: W/"8f-bSpilbkjm1kFOSPHXBzgEw"
+1 < Server: Cowboy
+1 < Vary: X-HTTP-Method-Override
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"errors":{"message":"Unknown modifier: $pushAll. Expected a valid update modifier or pipeline-style update specified as an array","error":{}}}
+
+te specified as an array","error":{}}}
+
+le","description":"A new article for testing the app","body":"This is just an article. Just chill","createdAt":"2022-09-26T23:48:01.311Z","updatedAt":"2022-09-26T23:48:01.311Z","tagList":["Testing"],"favorited":false,"favoritesCount":0,"author":{"username":"tester202020","image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}}
+
+18:45:47.345 assertion failed: path: $.article.author, actual: {"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"username":"tester202020"}, expected: {image=#string, following=#boolean, username=#string, bio=#string}, reason: all key-values did not match, expected has un-matched keys: [bio]

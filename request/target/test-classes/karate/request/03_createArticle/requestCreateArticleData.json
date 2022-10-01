@@ -1,0 +1,10 @@
+{
+  "article": {
+    "title": "This is a new article",
+    "description": "A new article for testing the app",
+    "body": "This is just an article. Just chill",
+    "tagList": [
+      "Testing"
+    ]
+  }
+}
